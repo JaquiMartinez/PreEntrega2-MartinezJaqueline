@@ -67,6 +67,8 @@
   
 }
 
+/*---------------------MOBILE HEADER-------------*/
+
 @media screen and (max-width:768px) {
     .navbar-toggler {
         border: 2px solid #C9AC1E;
@@ -187,7 +189,7 @@ h1 {
 }
 
 
-
+/*-------------------MOBILE INICIO-------------*/
 
 @media screen and (max-width:768px) {
     .index {
@@ -364,6 +366,8 @@ h3 {
     flex-direction: row;
 }
 
+/*---------------------------MOBILE PAGINA SERVICIOS--------------------------*/
+
 @media screen and (max-width:768px) {
     
     
@@ -502,6 +506,7 @@ h3 {
     font-family: 'Judson', serif;
 }
 
+/*-----------------------------MOBILE PAG SHOP ------------------------*/
 
 @media screen and (max-width:768px) {
     .shop {
@@ -671,6 +676,9 @@ h2 {
     transform: scale(1.5);
     transition: all 1s ease;
 }
+
+/*------------------------------------MOBILE Pag GALERIA---------------------------*/
+
 @media screen and (max-width:768px) {
     h2 {
         
@@ -861,6 +869,8 @@ input {
     font-size: 30px;
 }
 
+/*-----------------------------MOBILE Pag Contacto-------------*/
+
 @media screen and (max-width:768px) {
     .form {
         margin: 10px;
@@ -943,6 +953,8 @@ footer {
 .direc__p {
     margin: 0;
 }
+
+/*-------------------MOBILE FOOTER-------------*/
 
 @media screen and (max-width :768px) {
     footer {
