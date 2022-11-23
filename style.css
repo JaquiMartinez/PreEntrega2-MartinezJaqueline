@@ -285,20 +285,14 @@ h3 {
 
 .container__manicure {
     width: 80vw;
-    height: 350px;
+    height: auto;
     background-color: rgb(243, 218, 216, 0.5);
     border-radius: 40px;
     padding: 30px;
     
 }
 
-.container__manicure:hover {
-    
-    transform: scale(1.1);
-    transition: all 1s ease;
-    
 
-}
 
 .manicure__service {
     display: flex;
@@ -337,17 +331,15 @@ h3 {
 .container__facial {
     margin-top: 60px;
     width: 80vw;
-    height: 350px;
+    height: auto;
     background-color: rgb(243, 218, 216, 0.5);
     border-radius: 40px;
     padding: 30px;
-}
 
-.container__facial:hover {
-    transform: scale(1.1);
-    transition: all 1s ease;
 
 }
+
+
 
 
 .facial__service {
@@ -364,6 +356,39 @@ h3 {
     margin-right: 80px;
     display: flex;
     flex-direction: row;
+
+
+}
+
+.container__massages {
+    margin-top: 60px;
+    width: 80vw;
+    height: auto;
+    background-color: rgb(243, 218, 216, 0.5);
+    border-radius: 40px;
+    padding: 30px;
+
+
+}
+
+
+
+.massages__service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 50px;
+
+    
+}
+
+.massages__description {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: row;
+
+
 }
 
 /*---------------------------MOBILE PAGINA SERVICIOS--------------------------*/
@@ -448,6 +473,35 @@ h3 {
         flex-direction: column;
     }
     
+    .container__massages {
+        width: 80%;
+        height: auto;
+        padding: 5px;
+    
+    
+    }
+    
+    .container__massages:hover {
+        transform: none;
+    
+    
+    }
+    
+    .massages__service {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    
+        
+    }
+    
+    .massages__description {
+        margin-right: 80px;
+        display: flex;
+        flex-direction: column;
+    
+    
+    }
   
 }
 
