@@ -104,6 +104,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+   
+    
     
 }
 
@@ -147,6 +149,7 @@ h1 {
     border-radius: 30px;
     
     
+    
 }
 
 .text__description {
@@ -165,17 +168,14 @@ h1 {
     margin: 20px;
 }
 
-.index__img {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-}
 
 .carousel {
-    position: relative;
+    width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
     
 }
 
@@ -184,8 +184,11 @@ h1 {
     border-radius: 30px;
 }
 
-.carousel-control-next, .carousel-control-prev {
-    width: 45%;
+.button-carousel {
+    width: 350px;
+    
+    
+    
 }
 
 

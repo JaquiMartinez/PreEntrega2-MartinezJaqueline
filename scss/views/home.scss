@@ -1,0 +1,102 @@
+/*------------------------------------ Pag INICIO-------------*/
+
+.index {
+    background-image: url(../img/inicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    h1{
+        color: white;
+        font-family: 'Judson', serif;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: lighter;
+        
+       
+        
+    }
+    
+        .main__index {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 5px;
+            margin-left: 60px;
+            .index__text {
+                background-color: rgba(118, 175, 157, 0.8);
+                width: 50%;
+                height: auto;
+                margin-right: 60px;
+                border-radius: 30px;
+                .text__tittlemain {
+                    color: white;
+                    text-align: center;
+                    font-size: 30px;
+                    margin: 20px;
+                    }
+                .text__description {
+                        color: white;
+                        text-align: center;
+                        font-size: 25px;
+                        width: 100%;
+                    }    
+            }
+            .carousel {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+                .carousel-inner {
+                    width: 60%;
+                    border-radius: 30px;
+                }
+                .button-carousel {
+                    width: 350px;
+                }
+            }
+    }
+    
+}
+
+
+/*-------------------MOBILE INICIO-------------*/
+
+@media screen and (max-width:768px) {
+    .index {
+         background-size: cover;
+         h1 {
+            font-size: 31px;
+             
+        }
+        .main__index {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            .index__text {
+                width: 100%;
+                .text__tittlemain {
+                    font-size: 21px;
+                    margin: 5px;
+                    .text__description {
+                        font-size: 16px;
+                        margin-top: -20px;
+                    
+                    }
+                }
+                
+            }
+            .carousel-inner {
+                width: 100%;
+                
+            }
+            .carousel-control-next, .carousel-control-prev {
+                width: 10%;
+            }
+            
+        }
+    }
+}
+
