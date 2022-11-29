@@ -3,13 +3,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    h2 {
+    background-size: cover;
+    .service__tittle {
         color: white;
         font-family: 'Judson', serif;
         font-size: 40px;
         text-align: center;
         margin-top: 60px;
         font-weight: lighter;
+        @include mobile {
+            font-size: 30px;
+            margin-top: 10px;
+        }
     }
     .service__container {
         display: flex;
@@ -28,31 +33,52 @@
                 text-align: center;
                 font-size: 25px;
                 font-weight: lighter;
+                @include mobile {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+            @include mobile {
+                width: 80%;
+                height: auto;
+                padding: 5px;
+                &:hover {
+                transform: none
+            }
             }
             .manicure__service {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 margin-left: 80px;
-                .service__img {
-                    width: 80%;
-                    height: auto;
-                    border-radius: 15px;
-                    box-shadow: 3px 3px 10px;
+                @include mobile {
+                    flex-direction: column;
+                    margin: 10px;
                 }
+                
                 .manicure__description {
                     margin: 30px;
                     display: flex;
                     flex-direction: row;
+                    @include mobile {
+                        margin: 30px;
+                        display: flex;
+                        flex-direction: column;
+                    }
                     .description__listm {
                         list-style-type: circle;
                         .list__type {
-                            font-size: 20px;
+                            font-size: 23px;
                             font-weight: lighter;
                             color: white;
                             text-align: start;
-                            margin-right: 150px;
-                            
+                            margin-right: 80px;
+                            width: 100%;
+                            @include mobile {
+                                font-size: 18px;
+                                text-align: start;
+                                width: 100%;
+                            }
                             
                         }
                     }
@@ -72,6 +98,19 @@
                 text-align: center;
                 font-size: 25px;
                 font-weight: lighter;
+                @include mobile {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+            @include mobile {
+                width: 80%;
+                height: auto;
+                padding: 5px;
+                &:hover {
+                    transform: none;
+            }
+
             }
             .facial__service {
                 display: flex;
@@ -79,18 +118,42 @@
                 margin-right: 80px;
                 align-items: center;
                 margin-top: 50px;
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
+                }
                 .facial__description {
-                    margin-right: 80px;
+                    margin-right:0px;
                     display: flex;
                     flex-direction: row;
+                    @include mobile {
+                        margin-top: 15px;
+                        margin-right: 80px;
+                        display: flex;
+                        flex-direction: column;
+
+                    }
+
                     .description__listf {
                         list-style-type: circle;
+                        @include mobile {
+                            margin-left: 90px;
+                        }
                         .list__type {
-                            font-size: 20px;
+                            font-size: 23px;
                             font-weight: lighter;
                             color: white;
                             text-align: start;
-                            margin-right: 150px;
+                            margin-right: 80px;
+                            width: 100%;
+                            @include mobile {
+                                font-size: 18px;
+                                text-align: start;
+                                width: 100%;
+                            }
+                            
+                            
                             
                             
                         }
@@ -110,6 +173,19 @@
                 text-align: center;
                 font-size: 25px;
                 font-weight: lighter;
+                @include mobile {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+            @include mobile {
+                width: 80%;
+                height: auto;
+                padding: 5px;
+                &:hover {
+                    transform: none;
+                }
+
             }
             .massages__service {
                 display: flex;
@@ -117,18 +193,35 @@
                 align-items: center;
                 margin-left: 30px;
                 margin-top: 50px;
+                @include mobile {
+                    flex-direction: column;
+                    margin: 10px;
+
+                }
                 .massages__description {
                     margin-right: 80px;
                     display: flex;
                     flex-direction: row;
+                    @include mobile {
+                        margin: 30px;
+                        display: flex;
+                        flex-direction: column;
+
+                    }
                     .description__listma {
                         list-style-type: circle;
                         .list__type {
-                            font-size: 20px;
+                            font-size: 23px;
                             font-weight: lighter;
                             color: white;
                             text-align: start;
-                            margin-right: 150px;
+                            margin-right: 80px;
+                            width: 100%;
+                            @include mobile {
+                                font-size: 18px;
+                                text-align: start;
+                                width: 100%;
+                            }
                             
                             
                         }
@@ -138,101 +231,16 @@
         }
         
     }
-    
-}
-
-
-/*---------------------------MOBILE PAGINA SERVICIOS--------------------------*/
-
-@media screen and (max-width:768px) {
-    
-    
-    
-    
-    
-    .service__tittle {
-        font-size: 30px;
-        margin-top: 10px;
-        .container__manicure {
-            width: 80%;
-            height: auto;
-            padding: 5px;
-            &:hover {
-                transform: none
-            }
-            .manicure__service {
-                flex-direction: column;
-                margin: 10px;
-                .service__img {
-                    width: 100%;
-            
-                }
-                .manicure__description {
-                    margin: 30px;
-                    display: flex;
-                    flex-direction: column;
-                    .description__listm {
-                        list-style-type: circle;
-                        
-                       
-                    }
-                    
-                }
-                
-            }
-        
-        }
-        .container__facial {
-            width: 80%;
-            height: auto;
-            padding: 5px;
-            &:hover {
-                transform: none;
-            }
-            .facial__service {
-                display: flex;
-                flex-direction: column;
-                margin: 10px;
-                .facial__description {
-                    margin-right: 80px;
-                    display: flex;
-                    flex-direction: column;
-                    .description__listf {
-                        list-style-type: circle;
-                        margin-left: 90px;
-                        
-                       
-                    }
-                }
-            }
-            
-        }
-        .container__massages {
-            width: 80%;
-            height: auto;
-            padding: 5px;
-            &:hover {
-                transform: none;
-            }
-            .massages__service {
-                display: flex;
-                flex-direction: column;
-                margin: 10px;
-                .massages__description {
-                    margin-right: 80px;
-                    display: flex;
-                    flex-direction: column;
-                    .description__listma {
-                        list-style-type: circle;
-                
-                    }
-                }
-            }
-        }
-        .list__type {
-            text-align: center;
+    .service__img {
+        min-width: 80%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px;
+        @include mobile {
             width: 100%;
         }
     }
     
 }
+
+

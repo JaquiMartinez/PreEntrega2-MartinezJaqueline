@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
     h1{
         color: white;
         font-family: 'Judson', serif;
@@ -13,9 +14,12 @@
         margin-top: 20px;
         margin-bottom: 30px;
         font-weight: lighter;
-        
-       
-        
+        @include mobile {
+            font-size: 31px;
+        }
+    }
+    @include mobile {
+        background-size: cover;
     }
     
         .main__index {
@@ -24,37 +28,68 @@
             align-items: center;
             margin-top: 5px;
             margin-left: 60px;
+            @include mobile {
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+            }
             .index__text {
                 background-color: rgba(118, 175, 157, 0.8);
                 width: 50%;
                 height: auto;
                 margin-right: 60px;
                 border-radius: 30px;
+                @include mobile {
+                    width: 100%;
+                }
                 .text__tittlemain {
                     color: white;
                     text-align: center;
                     font-size: 30px;
                     margin: 20px;
+                    @include mobile {
+                        font-size: 21px;
+                        margin: 5px;
+                    }
                     }
                 .text__description {
                         color: white;
                         text-align: center;
                         font-size: 25px;
                         width: 100%;
+                        @include mobile {
+                            font-size: 16px;
+                            margin-top: -20px;
+                        }
                     }    
             }
             .carousel {
                 width: 50%;
+                height: 500px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 10px;
+                margin-right: 50px;
+                @include mobile {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 20px;
+                    margin-right: 70px;
+                    
+                }
                 .carousel-inner {
-                    width: 60%;
+                    width: 100%;
                     border-radius: 30px;
+                    @include mobile {
+                        width: 100%;
+                    }
+                    
                 }
                 .button-carousel {
-                    width: 350px;
+                    width: 50px;
+                    @include mobile {
+                        width: 10%;
+                    }
                 }
             }
     }
@@ -62,41 +97,4 @@
 }
 
 
-/*-------------------MOBILE INICIO-------------*/
-
-@media screen and (max-width:768px) {
-    .index {
-         background-size: cover;
-         h1 {
-            font-size: 31px;
-             
-        }
-        .main__index {
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-content: center;
-            .index__text {
-                width: 100%;
-                .text__tittlemain {
-                    font-size: 21px;
-                    margin: 5px;
-                    .text__description {
-                        font-size: 16px;
-                        margin-top: -20px;
-                    
-                    }
-                }
-                
-            }
-            .carousel-inner {
-                width: 100%;
-                
-            }
-            .carousel-control-next, .carousel-control-prev {
-                width: 10%;
-            }
-            
-        }
-    }
-}
 
